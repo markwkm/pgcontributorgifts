@@ -1,20 +1,35 @@
 \title{PostgreSQL\textsuperscript{\textregistered} Acknowledged Contributor Recognition}
 \subtitle{}
 \author[Mark Wong]{Mark Wong\\PostgreSQL Major Contributor\\markwkm@postgresql.org}
-\institute[HOW 2026]{Hello Open-source World, 2026, Jinan, China}
-\date{April 26-28, 2026}
+\institute[HOW 2026]{}
+\date[April 26-28, 2026]{}
 
 \usepackage[UTF8]{ctex}
+\usepackage{tikz}
+\usepackage{fontspec}
+
+\setmainfont[BoldFont = {WesFYW03-Bold}, ItalicFont = {WesFYW03-Bold}]{WesFYW03-Regular}
+\setsansfont[BoldFont = {WesFYW03-Bold}, ItalicFont = {WesFYW03-Bold}]{WesFYW03-Regular}
+\setmonofont[BoldFont = {WesFYW03-Bold}, ItalicFont = {WesFYW03-Bold}]{WesFYW03-Regular}
 
 \begin{document}
 
-\setbeamercolor{background canvas}{bg=pgbaseblue}
-\frame{\titlepage}
+\setbeamercolor{background canvas}{bg=how2026}
+\frame{
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[opacity=1] at (current page.center) {
+      \includegraphics[width=\paperwidth,height=\paperheight]{how2026-ppt-template-EN-title.png}
+    };
+  \end{tikzpicture}
+
+  \titlepage
+}
 
 \setbeamertemplate{footline}[postgres body]
 
 \frame
 {
+  \Large
   This is a story about how contributions towards a major release are
   recognized in the PostgreSQL \textbf{Release Notes} by covering how the list
   is created and what the community does to show its appreciation.
@@ -39,7 +54,7 @@
     \end{column}
     \begin{column}{.5\textwidth}
       \begin{center}
-        \includegraphics[scale=.6]{Pg14-challenge-coin.jpg}
+        \includegraphics[width=\textwidth]{Pg14-challenge-coin.jpg}
       \end{center}
     \end{column}
   \end{columns}
@@ -86,6 +101,12 @@
 
 \frame
 {
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[opacity=1] at (current page.center) {
+      \includegraphics[width=\paperwidth,height=\paperheight]{how2026-ppt-template-EN-chapter.png}
+    };
+  \end{tikzpicture}
+
   \frametitle{Story Time}
 
   \Large
@@ -100,6 +121,12 @@
 
 \frame
 {
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[opacity=1] at (current page.center) {
+      \includegraphics[width=\paperwidth,height=\paperheight]{how2026-ppt-template-EN-chapter.png}
+    };
+  \end{tikzpicture}
+
   \Huge
   \begin{center}
     Part 1:
@@ -141,6 +168,12 @@
 
 \frame
 {
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[opacity=1] at (current page.center) {
+      \includegraphics[width=\paperwidth,height=\paperheight]{how2026-ppt-template-EN-chapter.png}
+    };
+  \end{tikzpicture}
+
   \Huge
   \begin{center}
     Part 2:
@@ -164,10 +197,10 @@
    \url{https://wiki.postgresql.org/wiki/Artwork}
 
   \begin{center}
-    \includegraphics[height=3cm]{postgresql-18.png}
-    \includegraphics[height=3cm]{postgresql-17.png}
-    \includegraphics[height=3cm]{postgresql-16.png}
-    \includegraphics[height=3cm]{postgresql-15.png}
+    \includegraphics[height=3.5cm]{postgresql-18.png}
+    \includegraphics[height=3.5cm]{postgresql-17.png}
+    \includegraphics[height=3.5cm]{postgresql-16.png}
+    \includegraphics[height=3.5cm]{postgresql-15.png}
   \end{center}
 }
 
@@ -234,21 +267,36 @@
 {
   \frametitle{How is it funded?}
 
-  PostgreSQL\textsuperscript{\textregistered} Funds Groups
-
-  \url{https://www.postgresql.org/about/policies/funds-group/}
-
-  \begin{center}
-    \includegraphics[height=1cm]{qr-funds-group.png}
-  \end{center}
+  \begin{itemize}
+    \item PostgreSQL\textsuperscript{\textregistered} Funds Groups\\
+          \includegraphics[height=1cm]{qr-funds-group.png}
+          \url{https://www.postgresql.org/about/policies/funds-group/}
+    \item A proposal is made
+    \begin{itemize}
+      \item Estimate of costs
+      \begin{itemize}
+        \item The gift itself
+        \item Postage
+        \item Shipping supplies
+      \end{itemize}
+    \end{itemize}
+    \item The Funds Groups votes
+    \item If the motion passes, then the gifts are purchased
+  \end{itemize}
 }
 
 \frame[containsverbatim]
 {
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[opacity=1] at (current page.center) {
+      \includegraphics[width=\paperwidth,height=\paperheight]{how2026-ppt-template-EN-title.png}
+    };
+  \end{tikzpicture}
+
   \begin{center}
   \Huge
     Thank you!\\
-    谢谢\\
+    谢谢!\\
 
     \rule{0.25\textwidth}{0.5pt}
   \end{center}
